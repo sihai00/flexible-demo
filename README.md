@@ -11,18 +11,6 @@ npm install
 npm run webpack
 ```
 
----
-## 效果图
-### iphone5下的展示图
-![image](./iphone5.png)
----
-### iphone6下的展示图
-![image](./iphone6.png)
----
-### iphone6p下的展示图
-![image](./iphone6+.png)
----
-
 ## 主要方法调用
 > 由于flexible是通过页面的缩放比实现，解决了高清图模糊和1px边框的问题，但同时带来副作用是字体和布局的缩放
 
@@ -47,3 +35,5 @@ $baseFontSize: 75px;
   	@return $px / $baseFontSize * 1rem;
 }
 ```
+
+链接：[淘宝lib-flexible](https://github.com/amfe/lib-flexible)
