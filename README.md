@@ -11,6 +11,11 @@ npm install
 npm run webpack
 ```
 
+---
+## 效果图(iphone6下的展示图)
+![image](./iphone6.png)
+---
+
 ## 主要方法调用
 > 由于flexible是通过页面的缩放比实现，解决了高清图模糊和1px边框的问题，但同时带来副作用是字体和布局的缩放
 
