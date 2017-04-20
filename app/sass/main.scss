@@ -1,0 +1,62 @@
+// 设计图宽度
+$baseFontSize: 75px;
+
+// 布局调整调用
+@function px2rem($px) {
+  	@return $px / $baseFontSize * 1rem;
+}
+
+// 字体调整调用
+@mixin fontDpr($font-size) {
+    font-size: $font-size;
+    [data-dpr="2"] & {
+        font-size: $font-size * 2;
+    }
+    [data-dpr="3"] & {
+        font-size: $font-size * 3;
+    }
+}
+
+img{
+	width: 100%;
+}
+.container{
+	background-color: #6cbe40;
+	padding-bottom: px2rem(10px);
+}
+.list{
+	margin: px2rem(10px) px2rem(10px);
+	padding: px2rem(20px) px2rem(10px);
+	background-color: #fff;
+	display: flex;
+	@include fontDpr(14px);
+	.img-list{
+		width: px2rem(150px);
+		margin-right: px2rem(10px);
+	}
+	.info{
+		flex: 1;
+	}
+	.price{
+		font-weight: bold;
+		color: #f23a4c;
+		margin: px2rem(10px) 0;
+	}
+	.hot{
+		color: #ff6a30;
+	}
+	.btn-wrap{
+		display: flex;
+		justify-content: space-between;
+		.btn{
+			width: px2rem(160px);
+			height: px2rem(66px);
+			color: #fff;
+			background-color: #f5294c;
+			text-align: center;
+			line-height: px2rem(66px);
+			display: inline-block;
+			@include fontDpr(16px);
+		}
+	}
+}
