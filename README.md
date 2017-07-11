@@ -13,7 +13,7 @@ npm run webpack
 
 ---
 ## 效果图(iphone6下的展示图)
-![image](https://github.com/sihai00/flexible-demo/blob/master/iphone6.png)
+![image](./iphone6.png)
 ---
 
 ## 主要方法调用
